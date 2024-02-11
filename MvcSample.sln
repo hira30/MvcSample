@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcSqlCrudSample", "MvcSqlC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcDapperSample", "MvcDapperSample\MvcDapperSample.csproj", "{07B88DC5-6333-45CB-B590-63FCAF706495}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartialViewSample", "PartialViewSample\PartialViewSample.csproj", "{4BACB7D3-E7C4-4078-926F-D79319CE4E4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{07B88DC5-6333-45CB-B590-63FCAF706495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07B88DC5-6333-45CB-B590-63FCAF706495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07B88DC5-6333-45CB-B590-63FCAF706495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BACB7D3-E7C4-4078-926F-D79319CE4E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BACB7D3-E7C4-4078-926F-D79319CE4E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BACB7D3-E7C4-4078-926F-D79319CE4E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BACB7D3-E7C4-4078-926F-D79319CE4E4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
