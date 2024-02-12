@@ -1,0 +1,21 @@
+﻿@model UploadModel
+@{
+    ViewData["Title"] = "ファイルアップロード";
+}
+
+<h1>画像ファイルアップロード</h1>
+
+@if (ViewData["Result"] != null)
+{
+    @ViewData["Result"];
+}
+
+<form asp-action="Index" enctype="multipart/form-data" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="mb-3">
+        <input asp-for=File class="form-control" type="file">
+    </div>
+    <div class="form-group">
+        <input class="btn btn-primary" type="submit" value="アップロード" />
+    </div>
+</form>
