@@ -1,4 +1,8 @@
+using MvcSqlCrudSample.Models;
+
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddScoped<ISampleRepository, SampleRepository>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

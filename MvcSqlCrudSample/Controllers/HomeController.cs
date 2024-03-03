@@ -8,9 +8,11 @@ namespace MvcSqlCrudSample.Controllers
     public class HomeController : Controller
     {
         private readonly string _connectionString;
+        private readonly ISampleRepository _sampleRepository;
 
-        public HomeController(IConfiguration configuration)
+        public HomeController(IConfiguration configuration, ISampleRepository sampleRepository)
         {
+            _sampleRepository = sampleRepository;
             // appsettings.jsonƒtƒ@ƒCƒ‹‚©‚çÚ‘±•¶š—ñ‚ğæ“¾
             _connectionString = configuration.GetConnectionString("TodoConnection") 
                 ?? throw new ArgumentException("Ú‘±•¶š—ñ‚ªæ“¾‚Å‚«‚Ü‚¹‚ñ‚Å‚µ‚½");
@@ -21,6 +23,8 @@ namespace MvcSqlCrudSample.Controllers
         /// </summary>
         public async Task<IActionResult> Index()
         {
+            var sample = _sampleRepository.Get();
+
             using var connection = new SqlConnection(_connectionString);
             using var command = connection.CreateCommand();
 
